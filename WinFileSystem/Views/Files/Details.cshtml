@@ -1,0 +1,115 @@
+﻿@model Framework.File
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>File</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FileId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FileId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.filetype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.filetype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.filesize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.filesize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirectoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirectoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaximumLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaximumLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastDateAccessed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastDateAccessed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

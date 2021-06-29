@@ -1,0 +1,5 @@
+D:\Official work\Rencata\WinFileSystem\Framework\bin\Debug\Framework.dll
+D:\Official work\Rencata\WinFileSystem\Framework\bin\Debug\Framework.pdb
+D:\Official work\Rencata\WinFileSystem\Framework\obj\Debug\Framework.csproj.CoreCompileInputs.cache
+D:\Official work\Rencata\WinFileSystem\Framework\obj\Debug\Framework.dll
+D:\Official work\Rencata\WinFileSystem\Framework\obj\Debug\Framework.pdb

@@ -1,0 +1,89 @@
+﻿@model Framework.Directory
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Directory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DirId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirectoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirectoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaximumLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaximumLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastDateAccessed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastDateAccessed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUpdated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUpdated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

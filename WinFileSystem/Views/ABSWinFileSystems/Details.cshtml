@@ -1,0 +1,43 @@
+﻿@model Framework.ABSWinFileSystem
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ABSWinFileSystem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sector)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.blocks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.blocks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.partition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.partition)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
